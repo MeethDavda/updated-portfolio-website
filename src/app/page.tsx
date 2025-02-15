@@ -12,6 +12,7 @@ function page() {
               A developer building cool solutions with open source technologies.
             </div>
           </div>
+          <div>some image</div>
         </div>
       </div>
     </TracingBeam>
