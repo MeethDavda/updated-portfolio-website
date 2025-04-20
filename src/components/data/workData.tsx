@@ -105,3 +105,36 @@ export const projects = [
       "Get your medications delivered quickly and securely, right to your doorstep! Our delivery network ensures every order arrives on time and in perfect condition, so you never miss a moment of care.",
   },
 ];
+
+export const positions = [
+  {
+    position: "Project Lead",
+    organisation: "System Consultant Information India (SCII)",
+    startDate: "2023",
+    endDate: "2024",
+    image: "/assets/SCII.png",
+    tags: [
+      {
+        website: "IEEE Website",
+        link: "https://ieeexplore.ieee.org/document/10816830",
+      },
+    ],
+    description:
+      "Led a team of 5 in developing an innovative blockchain-based document storage system using NFTs, collaborating with the SCII Japan team and RVCE’s Computer Science department to ensure platform feasibility. Addiitonally, we have publised a research paper in IEEE.",
+  },
+  {
+    position: "Core team member",
+    organisation: "Entrepreneurship Cell, RVCE",
+    startDate: "2022",
+    endDate: "2023",
+    image: "/assets/Ecell.png",
+    tags: [
+      {
+        website: "ECell Website",
+        link: "https://www.linkedin.com/company/entrepreneurship-cell-rvce/?originalSubdomain=in",
+      },
+    ],
+    description:
+      "I helped organize and conduct numerous offline and online events, collaborating with 100+ companies and securing partnerships to raise funding.",
+  },
+];

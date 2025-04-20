@@ -4,11 +4,18 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { Button } from "@/components/ui/button";
 import { Notebook } from "lucide-react";
 import WorkExperience from "@/components/WorkExperience";
-import { work, education, skills, projects } from "@/components/data/workData";
+import {
+  work,
+  education,
+  skills,
+  projects,
+  positions,
+} from "@/components/data/workData";
 import Education from "@/components/Education";
 import { Badge } from "@/components/ui/badge";
 import ProjectCard from "@/components/ProjectCard";
 import Positions from "@/components/Positions";
+import ContactForm from "@/components/ContactForm";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -136,9 +143,11 @@ function page() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-[800px] mx-auto mt-8 ">
               {projects.map((project, index) => (
-                <BlurFade delay={BLUR_FADE_DELAY * 6 * index}>
+                <BlurFade
+                  delay={BLUR_FADE_DELAY * 6 * index}
+                  key={project.name}
+                >
                   <ProjectCard
-                    key={project.name}
                     name={project.name}
                     startDate={project.startDate}
                     endDate={project.endDate}
@@ -156,7 +165,7 @@ function page() {
             delay={BLUR_FADE_DELAY * 9}
             className="flex flex-col jucetify-center items-center mt-16"
           >
-            <div className="md:text-5xl text-2xl font-bold tracking-tight">
+            <div className="md:text-5xl text-3xl font-bold tracking-tight text-center">
               Positions of Responsibility
             </div>
             <div className=" md:text-xl/relaxed font-light text-gray-500 mt-2 text-center">
@@ -167,9 +176,31 @@ function page() {
               challenge me to grow. Here are some of the roles I've taken on so
               far.
             </div>
-            <ul>
-              <Positions />
+            <ul className="w-full border-l divide-y divide-dashed mt-8">
+              {positions.map((position, index) => (
+                <Positions
+                  position={position.position}
+                  key={position.position}
+                  startDate={position.startDate}
+                  endDate={position.endDate}
+                  description={position.description}
+                  image={position.image}
+                  organisation={position.organisation}
+                  tags={position.tags}
+                />
+              ))}
             </ul>
+          </BlurFade>
+        </div>
+        <div>
+          <BlurFade
+            delay={BLUR_FADE_DELAY * 10}
+            className="flex flex-col jucetify-center items-center my-16"
+          >
+            <div className="md:text-5xl text-2xl font-bold tracking-tight">
+              Get in Touch
+            </div>
+            <ContactForm />
           </BlurFade>
         </div>
       </div>
