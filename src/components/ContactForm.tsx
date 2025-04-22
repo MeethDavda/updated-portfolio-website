@@ -30,15 +30,28 @@ function ContactForm() {
     },
   });
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated
-    console.log(values);
+    const formElement = document.querySelector("form") as HTMLFormElement;
+    formElement?.submit();
   }
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    form.handleSubmit(onSubmit)(event);
+
+    const errors = form.formState.errors;
+
+    if (errors.email || errors.message) {
+      alert("You forgot something!");
+    }
+  };
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        onSubmit={handleSubmit}
         className="md:w-[75%] w-full mt-10"
+        method="POST"
+        action={process.env.NEXT_PUBLIC_FORM_SPREE_URL}
       >
         <FormField
           control={form.control}

@@ -90,16 +90,7 @@ export const projects = [
     name: "PharmaBolt",
     startDate: "2024",
     endDate: "Present",
-    image: "",
-    tags: ["React Native", "Expo", "Typescript", "Mapbox"],
-    description:
-      "Get your medications delivered quickly and securely, right to your doorstep! Our delivery network ensures every order arrives on time and in perfect condition, so you never miss a moment of care.",
-  },
-  {
-    name: "Project2",
-    startDate: "2024",
-    endDate: "Present",
-    image: "",
+    image: "/assets/PharmaBolt.png",
     tags: ["React Native", "Expo", "Typescript", "Mapbox"],
     description:
       "Get your medications delivered quickly and securely, right to your doorstep! Our delivery network ensures every order arrives on time and in perfect condition, so you never miss a moment of care.",

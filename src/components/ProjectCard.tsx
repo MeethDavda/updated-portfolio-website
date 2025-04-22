@@ -33,7 +33,8 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card className="w-full flex flex-col hover:shadow-xl transition-all duration-300 ease-in-out">
-      <div className="bg-slate-300 h-[10em] w-full"></div>
+      {/* <div className="bg-slate-300 h-[10em] w-full"></div> */}
+      <Image src={image} alt={name} height={200} width={400} />
       <CardHeader>
         <CardTitle>{name}</CardTitle>
         <div className="text-[12px] font-light">

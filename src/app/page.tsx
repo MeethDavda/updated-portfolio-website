@@ -16,12 +16,16 @@ import { Badge } from "@/components/ui/badge";
 import ProjectCard from "@/components/ProjectCard";
 import Positions from "@/components/Positions";
 import ContactForm from "@/components/ContactForm";
+import { Navbar } from "@/components/Navbar";
 
 const BLUR_FADE_DELAY = 0.04;
 
 function page() {
   return (
     <TracingBeam>
+      <div className="flex justify-center items-center">
+        <Navbar />
+      </div>
       <div className="flex flex-col justify-between sm:w-full px-8 ">
         <div className="flex flex-row mx-auto justify-around items-center w-full md:w-[75%]">
           <div className="flex flex-col ">
