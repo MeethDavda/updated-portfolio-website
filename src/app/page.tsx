@@ -167,7 +167,7 @@ function page() {
         <div>
           <BlurFade
             delay={BLUR_FADE_DELAY * 9}
-            className="flex flex-col jucetify-center items-center mt-16"
+            className="flex flex-col jucetify-center items-center mt-20"
           >
             <div className="md:text-5xl text-3xl font-bold tracking-tight text-center">
               Positions of Responsibility
