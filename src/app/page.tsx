@@ -77,7 +77,7 @@ function page() {
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
                 <a href="/assets/Resume.pdf" download="Meeth's Resume.pdf">
                   <Button variant="outline" className="w-40 h-8">
-                    <div className="text-xs">Download Reasume</div>
+                    <div className="text-xs">Download Resume</div>
                     <Notebook className="h-4 w-4" />
                   </Button>
                 </a>
