@@ -21,6 +21,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   tags: Array<String>;
+  liveLinks: Array<any>;
 }
 
 function ProjectCard({
@@ -30,11 +31,18 @@ function ProjectCard({
   description,
   image,
   tags,
+  liveLinks,
 }: ProjectCardProps) {
   return (
     <Card className="w-full flex flex-col hover:shadow-xl transition-all duration-300 ease-in-out">
       {/* <div className="bg-slate-300 h-[10em] w-full"></div> */}
-      <Image src={image} alt={name} height={200} width={400} />
+      <Image
+        src={image}
+        alt={name}
+        height={200}
+        width={400}
+        className="h-[13em] w-ful object-fit"
+      />
       <CardHeader>
         <CardTitle>{name}</CardTitle>
         <div className="text-[12px] font-light">
@@ -59,13 +67,15 @@ function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="flex flex-row justify-end">
-        <Link href="https://pharmabolt.com/" target="_blank">
-          <Badge className="text-[10px]">
-            <Icons.globe className="size-3 mr-1" />
-            Website
-          </Badge>
-        </Link>
+      <CardFooter className="flex flex-row justify-end gap-2">
+        {liveLinks?.map((link, index) => (
+          <Link href={link.link} target="_blank" key={index}>
+            <Badge className="text-[10px]">
+              <Icons.globe className="size-3 mr-1" />
+              {link.source}
+            </Badge>
+          </Link>
+        ))}
       </CardFooter>
     </Card>
   );

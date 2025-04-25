@@ -158,6 +158,7 @@ function page() {
                     image={project.image}
                     description={project.description}
                     tags={project.tags}
+                    liveLinks={project.liveLinks}
                   />
                 </BlurFade>
               ))}
