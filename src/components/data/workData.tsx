@@ -3,6 +3,7 @@ import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiAppwrite, SiKubernetes } from "react-icons/si";
 import { Icons } from "../Icons";
 import { startOptimizedAppearAnimation } from "motion/react";
+import { link } from "fs";
 
 export const work = [
   {
@@ -92,8 +93,41 @@ export const projects = [
     endDate: "Present",
     image: "/assets/PharmaBolt.png",
     tags: ["React Native", "Expo", "Typescript", "Mapbox"],
+    liveLinks: [
+      {
+        source: "Website",
+        link: "https://www.pharmabolt.com/",
+      },
+      {
+        source: "IOS",
+        link: "https://apps.apple.com/in/app/pharmabolt/id6743553381",
+      },
+      {
+        source: "Android",
+        link: "https://play.google.com/store/apps/details?id=com.pharmabolt.app",
+      },
+    ],
     description:
       "Get your medications delivered quickly and securely, right to your doorstep! Our delivery network ensures every order arrives on time and in perfect condition, so you never miss a moment of care.",
+  },
+  {
+    name: "Decentralised Document Storage",
+    startDate: "2023",
+    endDate: "2024",
+    image: "/assets/NFTProject.png",
+    tags: ["React", "Ethereum", "Polygon", "Typescript", "IPFS"],
+    liveLinks: [
+      {
+        source: "Video",
+        link: "https://www.loom.com/share/8880f44e41794cd3babb2e59861dffc7",
+      },
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/NFT_cards",
+      },
+    ],
+    description:
+      "An innovative blockchain-based document storage system using NFTs where an organisation can store their documents in the blockchain and share them with the employees.",
   },
 ];
 
