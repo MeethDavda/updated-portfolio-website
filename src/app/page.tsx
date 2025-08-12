@@ -58,10 +58,11 @@ function page() {
             </BlurFade>
             <BlurFade className="mt-2" delay={BLUR_FADE_DELAY * 4}>
               <div className="font-normal text-gray-500">
-                Hi, my name is Meeth J Davda, you can call me Meeth. Based in
-                Bangalore, India, I am a full time{" "}
+                Hi, my name is Meeth J Davda, you can call me Meeth. I am a
+                student at the University of Southern California currently
+                studying Masters in Computer Science. I am an{" "}
                 <strong className="font-semibold text-gray-900">
-                  Software Engineer Developer{" "}
+                  Ex Software Engineer Developer{" "}
                 </strong>{" "}
                 at Boeing India. As a
                 <strong className="font-semibold text-gray-900">

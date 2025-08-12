@@ -10,7 +10,7 @@ export const work = [
     company: "Boeing",
     jobTitle: "Software Engineer",
     startDate: "September 2024",
-    endDate: "Present",
+    endDate: "August 2025",
     description: [
       "Developed flight management tools aligned with safety and regulatory standards to improve aircraft performance.",
       "Automated requirement-based testing using Python, streamlining QA and reducing manual effort.",
@@ -42,6 +42,13 @@ export const work = [
 ];
 
 export const education = [
+  {
+    name: "University of Southern California",
+    qualification: "Masters of Science in Computer Science",
+    startDate: "2025",
+    endDate: "2027",
+    image: "/assets/USC.png",
+  },
   {
     name: "RV College of Engineering",
     qualification:
