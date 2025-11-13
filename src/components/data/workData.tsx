@@ -136,6 +136,25 @@ export const projects = [
     description:
       "An innovative blockchain-based document storage system using NFTs where an organisation can store their documents in the blockchain and share them with the employees.",
   },
+  {
+    name: "IssueLens",
+    startDate: "2025",
+    endDate: "2025",
+    image: "/assets/IssueLens.png",
+    tags: ["RAG", "OpenAI API", "Embeddings", "LLM", "Appwrite DB", "NodeJS"],
+    liveLinks: [
+      {
+        source: "Website",
+        link: "https://issuelens-frontend.appwrite.network/",
+      },
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/IssueLens-frontend",
+      },
+    ],
+    description:
+      "IssueLens is a developer tool that uses Retrieval-Augmented Generation (RAG) to help you quickly find relevant fixes from thousands of GitHub issues and comments. Instead of endlessly scrolling or searching through noise, you paste your error message and instantly get concise explanations, real solutions, and links to the most relevant discussions.",
+  },
 ];
 
 export const positions = [
