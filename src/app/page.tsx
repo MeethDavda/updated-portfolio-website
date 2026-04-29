@@ -77,7 +77,7 @@ function page() {
             <div className="flex justify-end mt-2">
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
                 <a
-                  href="/assets/Meeth_ResumeV2.pdf"
+                  href="/assets/Meeth_Davda_Resume.pdf"
                   download="Meeth's Resume.pdf"
                 >
                   <Button variant="outline" className="w-40 h-8">
