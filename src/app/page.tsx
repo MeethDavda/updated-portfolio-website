@@ -159,7 +159,6 @@ function page() {
                     name={project.name}
                     startDate={project.startDate}
                     endDate={project.endDate}
-                    image={project.image}
                     description={project.description}
                     tags={project.tags}
                     liveLinks={project.liveLinks}
