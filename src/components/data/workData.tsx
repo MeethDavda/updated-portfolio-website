@@ -95,10 +95,72 @@ export const skills = [
 
 export const projects = [
   {
+    name: "MCP Semantic Tool Router",
+    startDate: "June 2026",
+    endDate: "June 2026",
+    tags: ["Python", "OpenAI API", "MCP SDK", "NumPy", "Embeddings"],
+    liveLinks: [
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/mcp-semantic-router",
+      },
+    ],
+    description:
+      "A semantic router that gives AI agents only the most relevant tools for each query instead of all 120, cutting cost per query by 21x with 100% accuracy at k=3.",
+  },
+  {
+    name: "Raft Distributed KV Store",
+    startDate: "Aug 2026",
+    endDate: "Sept 2026",
+    tags: ["C++20", "gRPC", "Protobuf", "OpenTelemetry", "Grafana"],
+    liveLinks: [
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/Distributed-KV-Store",
+      },
+    ],
+    description:
+      "A fault-tolerant, strongly consistent distributed key-value store built on Raft consensus, with exactly-once writes and crash recovery through a write-ahead log.",
+  },
+  {
+    name: "Apple Watch Health Coach",
+    startDate: "May 2026",
+    endDate: "May 2026",
+    tags: ["Swift", "SwiftUI", "HealthKit", "CoreMotion"],
+    liveLinks: [
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/Fitness-Coach-WatchOS-app",
+      },
+    ],
+    description:
+      "A standalone watchOS app that analyzes health data fully on-device. It adapts sensor polling to your motion and flags unusual biometric readings in real time.",
+  },
+  {
+    name: "OpsAgent",
+    startDate: "June 2026",
+    endDate: "July 2026",
+    tags: [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "Node.js",
+      "Next.js",
+      "PostgreSQL",
+    ],
+    liveLinks: [
+      {
+        source: "Github",
+        link: "https://github.com/MeethDavda/OpsAgent",
+      },
+    ],
+    description:
+      "An AI agent that diagnoses and fixes production incidents, writes postmortems, and alerts on-call engineers on Slack, saving about 45 minutes per incident.",
+  },
+  {
     name: "PharmaBolt",
     startDate: "2024",
-    endDate: "Present",
-    image: "/assets/PharmaBolt.png",
+    endDate: "2025",
     tags: ["React Native", "Expo", "Typescript", "Mapbox"],
     liveLinks: [
       {
@@ -121,7 +183,6 @@ export const projects = [
     name: "Decentralised Document Storage",
     startDate: "2023",
     endDate: "2024",
-    image: "/assets/NFTProject.png",
     tags: ["React", "Ethereum", "Polygon", "Typescript", "IPFS"],
     liveLinks: [
       {
@@ -140,7 +201,6 @@ export const projects = [
     name: "IssueLens",
     startDate: "2025",
     endDate: "2025",
-    image: "/assets/IssueLens.png",
     tags: ["RAG", "OpenAI API", "Embeddings", "LLM", "Appwrite DB", "NodeJS"],
     liveLinks: [
       {

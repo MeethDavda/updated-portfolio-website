@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
-import Image from "next/image";
 import { Badge } from "./ui/badge";
 import { Icons } from "./Icons";
 import Link from "next/link";
@@ -19,7 +18,6 @@ interface ProjectCardProps {
   startDate: string;
   endDate: string;
   description: string;
-  image: string;
   tags: Array<String>;
   liveLinks: Array<any>;
 }
@@ -29,20 +27,11 @@ function ProjectCard({
   startDate,
   endDate,
   description,
-  image,
   tags,
   liveLinks,
 }: ProjectCardProps) {
   return (
     <Card className="w-full flex flex-col hover:shadow-xl transition-all duration-300 ease-in-out">
-      {/* <div className="bg-slate-300 h-[10em] w-full"></div> */}
-      <Image
-        src={image}
-        alt={name}
-        height={200}
-        width={400}
-        className="h-[13em] w-ful object-fit"
-      />
       <CardHeader>
         <CardTitle>{name}</CardTitle>
         <div className="text-[12px] font-light">
@@ -54,7 +43,7 @@ function ProjectCard({
       </CardHeader>
       <CardContent>
         {tags && tags.length > 0 && (
-          <div className="flex flex-row gap-1">
+          <div className="flex flex-row flex-wrap gap-1">
             {tags?.map((tag, index) => (
               <Badge
                 variant="secondary"
